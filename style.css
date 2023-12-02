@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    background-color: #0766AD;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .img-container{ 
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 10px solid white;
+    overflow: hidden;
+    background-image: linear-gradient(blue, purple);
+    margin-bottom: 20px;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.text-area{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    line-height: 2em;
+}
+
+.links .link-container{
+    width: 650px;
+    height: 60px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 8px 8px #7B66FF;
+    border: 2px solid #7B66FF;
+    margin-bottom: 15px;
+}
+
+.link-container a{
+    text-decoration: none;
+    color: black;
+}
+
+a .link-items{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.link-container .link-items{
+    padding: 4px;
+}
+
+.link-items img{
+    width: 50px;
+    height: auto;
+    background-color: #6DB9EF;
+}
+
+.link-items .circle-button{
+    width: 50px;
+    height: 50px;
+    background-color: lightgray;
+}
+
+.hyperlink{
+    margin: 30px 0px;
+}
+
+.hyperlink a{
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+}
