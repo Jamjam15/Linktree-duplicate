@@ -3,12 +3,43 @@
     padding: 0;
 }
 
-body{
+.position-nav-hover{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-hover{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 750px;
+    align-items: center;
+    padding: 10px;
+    border: white solid 1px;
+    margin-top: 15px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.568);   
+}
+
+.nav-hover .img-container{
+    width: 45px ;
+    box-sizing: border-box;
+    height: 45px;
+    border-width: 5px;
+    margin-bottom: 0px;
+}
+
+.position-container{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 110vh;
     background-color: #0766AD;
+}
+
+.nav-hover{
+    position: fixed;
+
 }
 
 .container{
@@ -17,7 +48,7 @@ body{
     align-items: center;
 }
 
-.container .img-container{ 
+.img-container{ 
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -27,7 +58,7 @@ body{
     margin-bottom: 20px;
 }
 
-.img-container img{
+img{
     width: 100%;
     height: 100%;
 }
@@ -39,7 +70,7 @@ body{
     line-height: 2em;
 }
 
-.links .link-container{
+.link-container{
     width: 650px;
     height: 60px;
     margin: 10px;
@@ -52,6 +83,10 @@ body{
 .link-container a{
     text-decoration: none;
     color: black;
+}
+
+.link-container:hover{
+    transform: translateY(4px); 
 }
 
 a .link-items{
@@ -75,9 +110,25 @@ a .link-items{
 }
 
 .link-items .circle-button{
-    width: 50px;
-    height: 50px;
-    background-color: lightgray;
+    opacity: 0;
+}
+
+.circle-button{
+    width: 40px;
+    height: 40px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.link-items:hover .circle-button{
+    opacity: 1;
+}
+
+.link-items .circle-button:hover{
+    background-color: rgb(179, 175, 175);
 }
 
 .hyperlink{
